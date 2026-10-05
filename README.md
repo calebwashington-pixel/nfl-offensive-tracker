@@ -1,18 +1,16 @@
-# 🏈 NFL Offensive Tracker
+# NFL Offensive Efficiency Tracker
 
-A Python-based data pipeline designed to track and analyze 2026 NFL offensive performance metrics, including Expected Points Added (EPA) and efficiency ratings.
+Ranks every NFL offense by efficiency using EPA per play, success rate, and explosive play rate, with separate pass and rush splits. Data covers the 2026 regular season through the latest week.
 
-## 📌 Project Overview
-This project processes play-by-play and team-level stats to evaluate offensive efficiency across the NFL.
+![Pass vs Rush Efficiency](offense_logos.png)
 
-## 🛠️ Tech Stack & Tools
-* **Language:** Python 3.x
-* **Libraries:** `pandas`, `numpy`, `requests`
-* **Data Sources:** CollegeFootballData / NFL API
+## Key finding
+San Francisco leads the league at 0.357 EPA per play, driven by a pass offense (0.615 EPA) far ahead of every other team.
 
-## 🚀 Getting Started
+## Files
+- `nfl_offense_tracker.py`: pulls data and builds the rankings
+- `offense_season.csv` / `offense_weekly.csv`: season and week-by-week results
+- `plot_logos.py`: draws the pass vs rush chart with team logos
 
-### Prerequisites
-Make sure you have Python installed and the required libraries:
-```bash
-pip install pandas numpy requests
+## Tools
+Python, pandas, matplotlib, Power BI
